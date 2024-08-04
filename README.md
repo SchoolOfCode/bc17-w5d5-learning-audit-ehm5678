@@ -49,8 +49,8 @@ Learning Plan:
 
 - Revising JS functions with notes and doing some practice exercises ✅
 
-- a function is defined with the function keyword, followed by a name, followed by parentheses ().
-- // eg  Define a function called multiplyFive which accepts a number and returns that number multiplied by 5.
+A function is defined with the function keyword, followed by a name, followed by parentheses ().
+Eg  Define a function called multiplyFive which accepts a number and returns that number multiplied by 5.
 
 function multiplyFive(number) {
   return number * 5;
@@ -96,7 +96,7 @@ export { max5 };
 
 - Revising API routes - doing some practice exercises using hackathon from W4 - completing unfinished routes ✅
 
-- Remember to import functions 💡 - this was error holding up progress in hackathon 
+Remember to import functions 💡 - this was error holding up progress in hackathon 
 
 
 Completing GET by ID request from hackthon: 
