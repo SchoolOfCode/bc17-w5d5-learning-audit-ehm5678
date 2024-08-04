@@ -99,7 +99,7 @@ export { max5 };
 - Remember to import functions 💡 - this was error holding up progress in hackathon 
 
 
-        Completing GET by ID request from hackthon: 
+Completing GET by ID request from hackthon: 
 
 farmers.js: 
 export async function getSingleFarmer(id) {
