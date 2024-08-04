@@ -47,7 +47,34 @@ Database
 
 Learning Plan: 
 
-- Revising JS functions with notes and doing some practice exercises 
+- Revising JS functions with notes and doing some practice exercises ✅
+
+- a function is defined with the function keyword, followed by a name, followed by parentheses ().
+- // eg  Define a function called multiplyFive which accepts a number and returns that number multiplied by 5.
+
+function multiplyFive(number) {
+  return number * 5;
+}
+
+console.log(multiplyFive(2)); 
+
+Write a function named minutesToHours that receives a number of minutes as parameter and returns a number representing the same amount of time but in hours.
+
+function minutesToHours(minutes) {
+    return minutes / 60; 
+}
+
+export { minutesToHours };
+
+Write a function named max5 that receives 5 numbers as parameters and returns the biggest one between them.
+
+function max5(nr1, nr2, nr3, nr4, nr5) {
+  return Math.max(nr1, nr2, nr3, nr4, nr5);
+}
+
+export { max5 };
+
+
 
 
 
@@ -60,11 +87,19 @@ Learning Plan:
 
 
 
+
+
+
+
+
+
+
 - Revising API routes - doing some practice exercises using hackathon from W4 - completing unfinished routes ✅
 
 - Remember to import functions 💡 - this was error holding up progress in hackathon 
 
-Completing GET by ID request from hackthon: 
+
+        Completing GET by ID request from hackthon: 
 
 farmers.js: 
 export async function getSingleFarmer(id) {
@@ -81,11 +116,11 @@ app.get("/egg/farmers/:id", async function (req, res) {
   const id = req.params.id;
   console.log(id);
   
-  // Retrieve farmer data using the provided ID
-  const singleFarmerData = await getSingleFarmer(id);
+// Retrieve farmer data using the provided ID
+const singleFarmerData = await getSingleFarmer(id);
   
-  // Check if farmer data is found
-  if (!singleFarmerData) {
+// Check if farmer data is found
+    if (!singleFarmerData) {
     return res.status(404).json({
       status: "fail",
       data: { msg: "Farmer not found" }
