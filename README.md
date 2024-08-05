@@ -78,22 +78,43 @@ export { max5 };
 
 
 
-#2 Revising SQL Joins with notes and doing some practice exercises 
+#2 Revising SQL Joins with notes and doing some practice exercises  ✅
 
 
+JOIN  clause is used to combine rows from two or more tables, based on a related column between them
+Maybe be inner join, left join, right join, outer join
+Note that the left table is the table that comes immediately after the FROM keyword, and the right table is the one that comes immediately after the JOIN keyword 
 
+Example LEFT JOIN: 
 
+SELECT column_name(s)
+FROM table1
+LEFT JOIN table2
+ON table1.column_name = table2.column_name;
 
+Table aliases - used to avoid confusion about which column goes with with value. here we are joining ‘table1’ and ‘table2’, using aliases
 
+SELECT column1, t1.name, t2.name, columnB
+FROM table1 AS t1
+LEFT JOIN table2 AS t2 
+ON t1.id = t2.table1_id
 
+some scenarios where this may be useful are retrieving related data from multiple tables. fetching data from parent and child tables, finding missing data (eg finding all users who have not logged in) 
 
+Self Join is a regular join, but the table is joined with itself - see example
 
+SELECT column_name(s)
+FROM table1 T1, table1 T2
+WHERE condition;
 
+here T1 and T2 are aliases for the same table
+
+Self join is useful when you have a table representing hierarchical relationships, such as employees and their managers - a self join allow you to link an employee to their manager within the same table
 
 
 #3 Revising API routes - doing some practice exercises using hackathon from W4 - completing unfinished routes ✅
 
-- Remember to import functions üí° - this was error holding up progress in hackathon 
+- Remember to import functions 💡 - this was error holding up progress in hackathon 
 
 
 Completing GET by ID request from hackthon: 
